@@ -9,8 +9,9 @@ import pylab
 import sys
 
 dataDir='..'
-dataType='train2014'
-# dataType='val2014'
+# dataType='train2014'
+dataType='val2014'
+
 if dataType =='test2014':
     annFile = '%s/annotations/image_info_%s.json'%(dataDir,dataType)
 else:

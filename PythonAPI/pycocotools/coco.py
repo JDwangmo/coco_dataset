@@ -239,11 +239,13 @@ class COCO:
             datasetType = 'captions'
         else:
             raise Exception('datasetType not supported')
+        
         if datasetType == 'instances':
             ax = plt.gca()
             ax.set_autoscale_on(False)
             polygons = []
             color = []
+            
             for ann in anns:
                 c = (np.random.random((1, 3))*0.6+0.4).tolist()[0]
                 if 'segmentation' in ann:
